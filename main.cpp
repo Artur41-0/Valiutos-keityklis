@@ -5,11 +5,14 @@
 using namespace std;
 
 int main() {
+// Kodo pasikartojimas
+    while (true){
     // Vartotojo pasirinkimams ir skaiciavimams
     int choice;
     int currencyChoice;
     double amount, result;
     string currencyName;
+    string grizti;
 
     // Kursai
     const double GBP_B = 0.8729, GBP_PIRK = 0.8600, GBP_PARD = 0.9220;
@@ -67,7 +70,12 @@ int main() {
         // Klaidos pranesimas, jei pasirinktas ne tas skaicius
         cout << "Klaida: Neteisingas pasirinkimas!" << endl;
     }
-
+    cout << "Noredami testi parasykite (T):";
+    cin >> grizti;
+    if (grizti != "T"){
+        break;
+    }
+    }
     return 0;
 
 }
